@@ -21,6 +21,9 @@ local config = {
   ["NSGold"] = { fg = p.gold },
 
   ["Normal"] = { bg = p.teal, fg = p.gold },
+  ["NormalFloat"] = { link = "Normal" },
+  ["NormalNC"] = { link = "Normal" },
+
   ["Function"] = { link = "NSGold" },
   ["SpecialFunction"] = { link = "NSGold" },
   ["Identifier"] = { link = "NSGold" },
@@ -36,6 +39,16 @@ local config = {
   ["Comment"] = { fg = p.lgreen },
   ["Constant"] = { fg = p.lteal },
   ["Keyword"] = { fg = p.white },
+
+  ["Conditional"] = { fg = p.white },
+  ["Repeat"] = { fg = p.white },
+  ["Label"] = { fg = p.white },
+
+  ["PreProc"] = { fg = p.mgreen },
+  ["Include"] = { fg = p.mgreen },
+  ["Define"] = { fg = p.mgreen },
+  ["Macro"] = { fg = p.mgreen },
+  ["PreCondit"] = { fg = p.mgreen },
 
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
@@ -61,6 +74,9 @@ local config = {
   ["@punctuation.special"] = { link = "NSGold" },
 
   ["@constructor"] = { link = "NSGold" },
+
+  ["@comment"] = { link = "Comment" },
+  ["@comment.documentation"] = { link = "Comment" },
 
   ["@keyword"] = { link = "Keyword" },
   ["@keyword.coroutine"] = { link = "Keyword" },
