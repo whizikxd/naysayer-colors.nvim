@@ -24,6 +24,9 @@ local config = {
   ["NormalFloat"] = { link = "Normal" },
   ["NormalNC"] = { link = "Normal" },
 
+  ["StatusLine"] = { bg = p.gold, fg = p.teal },
+  ["StatusLineNC"] = { bg = p.teal, fg = p.gold },
+
   ["Function"] = { link = "NSGold" },
   ["SpecialFunction"] = { link = "NSGold" },
   ["Identifier"] = { link = "NSGold" },
