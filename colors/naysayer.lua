@@ -10,6 +10,8 @@ local p = {
   mgreen = "#8CDE94", -- Mid green??
   lteal = "#7AD0C6",
   white = "#FFFFFF",
+  ccolumn = "#394844", -- ColorColumn
+  cline = "#1D3334", -- CursorLine
 }
 
 vim.g.colors_name = "naysayer"
@@ -26,6 +28,13 @@ local config = {
 
   ["StatusLine"] = { bg = p.gold, fg = p.teal },
   ["StatusLineNC"] = { bg = p.teal, fg = p.gold },
+
+  ["CursorLine"] = { bg = p.cline },
+  ["CursorLineNR"] = { bg = p.teal },
+  ["CursorLineFold"] = { bg = p.teal },
+  ["CursorLineSign"] = { bg = p.teal },
+
+  ["ColorColumn"] = { bg = p.ccolumn },
 
   ["Function"] = { link = "NSGold" },
   ["SpecialFunction"] = { link = "NSGold" },
