@@ -1,10 +1,10 @@
-## naysayer-colors.nvim
+# naysayer-colors.nvim
 
 neovim theme inspired by J. Blow emacs theme
 
 ![Example screenshot](https://raw.githubusercontent.com/whizikxd/naysayer-colors.nvim/master/assets/screenshot.png)
 
-# Installation
+## Installation
 
 <details>
     <summary>using lazy.nvim</summary>
