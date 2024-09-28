@@ -6,9 +6,10 @@ neovim theme inspired by J. Blow emacs theme
 
 # Installation
 
-- using lazy.nvim
+<details>
+    <summary>using lazy.nvim</summary>
+
 ```lua
--- put this in your init.lua
 {
   "whizikxd/naysayer-colors.nvim",
   lazy = false,
@@ -17,3 +18,19 @@ neovim theme inspired by J. Blow emacs theme
   end
 }
 ```
+
+</details>
+
+<details>
+    <summary>using packer.nvim</summary>
+
+```lua
+use {
+  "whizikxd/naysayer-colors.nvim",
+  config = function()
+    vim.cmd("colorscheme naysayer")
+  end
+}
+```
+
+</details>
