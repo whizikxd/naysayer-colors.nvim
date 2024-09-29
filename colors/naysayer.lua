@@ -5,6 +5,7 @@ local p = {
   teal = "#062329",
   blue = "#0000FF",
   gold = "#D1B897",
+  yellow = "#F9FF54",
   dgreen = "#2EC09C", -- Dark green
   lgreen = "#44B340", -- Lighter green
   mgreen = "#8CDE94", -- Mid green??
@@ -26,13 +27,21 @@ local config = {
   ["NormalFloat"] = { link = "Normal" },
   ["NormalNC"] = { link = "Normal" },
 
+  ["NonText"] = { fg = p.darkgrey1 },
+  ["WhiteSpace"] = { link = "NonText" },
+
   ["StatusLine"] = { bg = p.gold, fg = p.teal },
   ["StatusLineNC"] = { bg = p.teal, fg = p.gold },
+
+  ["CurSearch"] = { fg = p.teal, bg = p.yellow },
+  ["IncSearch"] = { fg = p.teal, bg = p.yellow },
+  ["Search"] = { fg = p.teal, bg = p.yellow },
 
   ["CursorLine"] = { bg = p.darkgrey2 },
   ["CursorLineNR"] = { bg = p.teal },
   ["CursorLineFold"] = { bg = p.teal },
   ["CursorLineSign"] = { bg = p.teal },
+  ["CursorColumn"] = { link = "CursorLine" },
 
   ["ColorColumn"] = { bg = p.darkgrey1 },
 
