@@ -3,13 +3,13 @@
 -- color palette
 local p = {
   teal = "#062329",
+  lteal = "#7AD0C6",
   blue = "#0000FF",
   gold = "#D1B897",
   yellow = "#F9FF54",
   dgreen = "#2EC09C", -- Dark green
   lgreen = "#44B340", -- Lighter green
   mgreen = "#8CDE94", -- Mid green??
-  lteal = "#7AD0C6",
   white = "#FFFFFF",
   darkgrey1 = "#4F5258", -- NvimDarkGrey4
   darkgrey2 = "#2C2E33", -- NvimDarkGrey3
@@ -29,6 +29,8 @@ local config = {
 
   ["NonText"] = { fg = p.darkgrey1 },
   ["WhiteSpace"] = { link = "NonText" },
+
+  ["ModeMsg"] = { fg = p.gold },
 
   ["StatusLine"] = { bg = p.gold, fg = p.teal },
   ["StatusLineNC"] = { bg = p.teal, fg = p.gold },
