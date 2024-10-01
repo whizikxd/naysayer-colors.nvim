@@ -35,6 +35,10 @@ local config = {
   ["StatusLine"] = { bg = p.gold, fg = p.teal },
   ["StatusLineNC"] = { bg = p.teal, fg = p.gold },
 
+  ["TabLine"] = { bg = p.teal, fg = p.gold },
+  ["TabLineFill"] = { bg = p.teal },
+  ["TabLineSel"] = { bg = p.gold, fg = p.teal },
+
   ["CurSearch"] = { fg = p.teal, bg = p.yellow },
   ["IncSearch"] = { fg = p.teal, bg = p.yellow },
   ["Search"] = { fg = p.teal, bg = p.yellow },
