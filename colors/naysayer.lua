@@ -74,7 +74,7 @@ local config = {
   ["vCursor"] = { link = "Cursor" },
   ["iCursor"] = { link = "Cursor" },
   ["lCursor"] = { link = "Cursor" },
-  ["Special"] = { link = "NaysayerDGrey2" },
+  ["Special"] = { link = "NaysayerLTeal" },
   ["Comment"] = { link = "NaysayerLGreen" },
  --  ["Todo"] = { },
  --  ["Done"] = { },
