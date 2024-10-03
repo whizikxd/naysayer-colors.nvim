@@ -14,6 +14,7 @@ local p = {
   darkgrey2 = "#2C2E33", -- NvimDarkGrey3
   white = "#FFFFFF",
   pink = "#C42F81",
+  red = "#D64C42",
 }
 
 vim.g.colors_name = "naysayer"
@@ -108,10 +109,10 @@ local config = {
  --  ["PmenuSel"] = { },
  --  ["PmenuSbar"] = { },
  --  ["PmenuThumb"] = { },
- --  ["DiffDelete"] = { },
- --  ["DiffAdd"] = { },
- --  ["DiffChange"] = { },
- --  ["DiffText"] = { },
+  ["DiffDelete"] = { fg = p.teal, bg = p.red },
+  ["DiffAdd"] = { fg = p.teal, bg = p.dgreen },
+  ["DiffChange"] = { fg = p.teal, bg = p.darkgrey1 },
+  ["DiffText"] = { link = "DiffAdd" },
  --  ["SpellCap"] = { },
  --  ["SpellBad"] = { },
  --  ["SpellLocal"] = { },
