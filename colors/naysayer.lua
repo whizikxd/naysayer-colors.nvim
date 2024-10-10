@@ -41,7 +41,7 @@ local config = {
   ["TabLineFill"] = { fg = p.gold, bg = p.teal },
   ["TabLineSel"] = { fg = p.teal, bg = p.gold },
   ["TabLine"] = { link = "TabLineFill" },
- --  ["MatchParen"] = { },
+  ["MatchParen"] = { bg = p.darkgrey1 },
   ["ColorColumn"] = { bg = p.darkgrey1 },
  --  ["Conceal"] = { },
   ["CursorLineNr"] = { link = "NaysayerGold" },
