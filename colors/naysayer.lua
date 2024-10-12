@@ -118,7 +118,7 @@ local config = {
  --  ["SpellLocal"] = { },
  --  ["SpellRare"] = { },
   ["Whitespace"] = { link = "NaysayerDGrey1" },
- --  ["Delimiter"] = { },
+  ["Delimiter"] = { link = "NaysayerGold" },
  --  ["EndOfBuffer"] = { },
   -- ["DiagnosticError"] = { },
   -- ["DiagnosticSignError"] = { },
