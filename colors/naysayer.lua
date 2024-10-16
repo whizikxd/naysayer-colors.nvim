@@ -149,6 +149,8 @@ local groups = {
 
   ["DiagnosticOk"] = { link = "NaysayerLGreen" },
 
+  ["luaTable"] = { link = "NaysayerGold" },
+
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
   ["@string.regexp"] = { link = "String" },
