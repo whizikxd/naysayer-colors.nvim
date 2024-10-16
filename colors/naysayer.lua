@@ -5,16 +5,19 @@ local p = {
   teal = "#062329",
   lteal = "#7AD0C6",
   blue = "#0000FF",
+  lblue = "#ADD8E6",
   gold = "#D1B897",
   yellow = "#F9FF54",
+  lyellow = "#FCE094",
   dgreen = "#2EC09C", -- Dark green
   lgreen = "#44B340", -- Lighter green
   mgreen = "#8CDE94", -- Mid green??
   darkgrey1 = "#4F5258", -- NvimDarkGrey4
   darkgrey2 = "#2C2E33", -- NvimDarkGrey3
   white = "#FFFFFF",
-  pink = "#C42F81",
+  pink = "#FF008C",
   red = "#D64C42",
+  lred = "#FFBBBB",
 }
 
 vim.g.colors_name = "naysayer"
@@ -23,7 +26,7 @@ vim.o.background = "dark"
 vim.cmd.hi("clear")
 vim.cmd.syntax("reset")
 
-local config = {
+local groups = {
   ["NaysayerGold"] = { fg = p.gold },
   ["NaysayerWhite"] = { fg = p.white },
   ["NaysayerLTeal"] = { fg = p.lteal },
@@ -120,28 +123,31 @@ local config = {
   ["Whitespace"] = { link = "NaysayerDGrey1" },
   ["Delimiter"] = { link = "NaysayerGold" },
  --  ["EndOfBuffer"] = { },
-  -- ["DiagnosticError"] = { },
-  -- ["DiagnosticSignError"] = { },
-  -- ["DiagnosticUnderlineError"] = { },
-  -- ["DiagnosticWarn"] = { },
-  -- ["DiagnosticSignWarn"] = { },
-  -- ["DiagnosticUnderlineWarn"] = { },
-  -- ["DiagnosticInfo"] = { },
-  -- ["DiagnosticSignInfo"] = { },
-  -- ["DiagnosticUnderlineInfo"] = { },
-  -- ["DiagnosticHint"] = { },
-  -- ["DiagnosticSignHint"] = { },
-  -- ["DiagnosticUnderlineHint"] = { },
-  -- ["DiagnosticFloatingError"] = { },
-  -- ["DiagnosticFloatingWarn"] = { },
-  -- ["DiagnosticFloatingInfo"] = { },
-  -- ["DiagnosticFloatingHint"] = { },
-  -- ["DiagnosticVirtualTextError"] = { },
-  -- ["DiagnosticVirtualTextWarn"] = { },
-  -- ["DiagnosticVirtualTextInfo"] = { },
-  -- ["DiagnosticVirtualTextHint"] = { },
-  -- ["DiagnosticOk"] = { },
+  ["DiagnosticError"] = { fg = p.lred },
+  ["DiagnosticSignError"] = { link = "DiagnosticError" },
+  ["DiagnosticUnderlineError"] = { underline = true },
+  ["DiagnosticFloatingError"] = { link = "DiagnosticError" },
+  ["DiagnosticVirtualTextError"] = { link = "DiagnosticError" },
 
+  ["DiagnosticWarn"] = { fg = p.lyellow },
+  ["DiagnosticSignWarn"] = { link = "DiagnosticWarn" },
+  ["DiagnosticUnderlineWarn"] = { underline = true },
+  ["DiagnosticFloatingWarn"] = { link = "DiagnosticWarn" },
+  ["DiagnosticVirtualTextWarn"] = { link = "DiagnosticWarn" },
+
+  ["DiagnosticInfo"] = { link = "NaysayerLTeal" },
+  ["DiagnosticSignInfo"] = { link = "DiagnosticInfo" },
+  ["DiagnosticUnderlineInfo"] = { underline = true },
+  ["DiagnosticFloatingInfo"] = { link = "DiagnosticInfo" },
+  ["DiagnosticVirtualTextInfo"] = { link = "DiagnosticInfo" },
+
+  ["DiagnosticHint"] = { fg = p.lblue },
+  ["DiagnosticSignHint"] = { link = "DiagnosticHint" },
+  ["DiagnosticUnderlineHint"] = { underline = true },
+  ["DiagnosticFloatingHint"] = { link = "DiagnosticHint" },
+  ["DiagnosticVirtualTextHint"] = { link = "DiagnosticHint" },
+
+  ["DiagnosticOk"] = { link = "NaysayerLGreen" },
 
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
@@ -190,6 +196,6 @@ local config = {
   ["@type.definition"] = { link = "Type" },
 }
 
-for k, v in pairs(config) do
+for k, v in pairs(groups) do
   vim.api.nvim_set_hl(0, k, v)
 end
