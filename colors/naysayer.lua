@@ -51,7 +51,7 @@ local groups = {
   -- ["NonText"] = { },
   -- ["SpecialKey"] = { },
   ["Visual"] = { bg = p.blue },
- --  ["VisualNOS"] = { },
+  ["VisualNOS"] = { link = "Visual" },
   ["Search"] = { fg = p.teal, bg = p.pink },
   ["IncSearch"] = { link = "Search" },
   ["CurSearch"] = { link = "Search" },
