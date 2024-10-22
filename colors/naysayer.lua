@@ -1,5 +1,4 @@
 -- nvim theme inspired by Jonathan Blow emacs theme
-
 -- color palette
 local p = {
   teal = "#062329",
@@ -18,6 +17,7 @@ local p = {
   pink = "#FF008C",
   red = "#D64C42",
   lred = "#FFBBBB",
+  lcyan = "#8CF8F7",
 }
 
 vim.g.colors_name = "naysayer"
@@ -30,6 +30,7 @@ local groups = {
   ["NaysayerGold"] = { fg = p.gold },
   ["NaysayerWhite"] = { fg = p.white },
   ["NaysayerLTeal"] = { fg = p.lteal },
+  ["NaysayerLCyan"] = { fg = p.lcyan },
   ["NaysayerDGreen"] = { fg = p.dgreen },
   ["NaysayerMGreen"] = { fg = p.mgreen },
   ["NaysayerLGreen"] = { fg = p.lgreen },
@@ -63,9 +64,9 @@ local groups = {
  --  ["WinBarNC"] = { },
  --  ["WinSeparator"] = { },
   ["WildMenu"] = { link = "PmenuSel" },
- --  ["Directory"] = { },
+  ["Directory"] = { link = "NaysayerLCyan" },
  --  ["Title"] = { },
-  ["ErrorMsg"] = { fg = p.lred },
+  ["ErrorMsg"] = { fg = p.red },
   ["MoreMsg"] = { link = "NaysayerGold" },
   ["ModeMsg"] = { link = "NaysayerGold" },
  --  ["Question"] = { },
@@ -123,7 +124,7 @@ local groups = {
   ["Whitespace"] = { link = "NaysayerDGrey1" },
   ["Delimiter"] = { link = "NaysayerGold" },
  --  ["EndOfBuffer"] = { },
-  ["DiagnosticError"] = { fg = p.lred },
+  ["DiagnosticError"] = { fg = p.red },
   ["DiagnosticSignError"] = { link = "DiagnosticError" },
   ["DiagnosticUnderlineError"] = { underline = true },
   ["DiagnosticFloatingError"] = { link = "DiagnosticError" },
@@ -135,7 +136,7 @@ local groups = {
   ["DiagnosticFloatingWarn"] = { link = "DiagnosticWarn" },
   ["DiagnosticVirtualTextWarn"] = { link = "DiagnosticWarn" },
 
-  ["DiagnosticInfo"] = { link = "NaysayerLTeal" },
+  ["DiagnosticInfo"] = { link = "NaysayerLCyan" },
   ["DiagnosticSignInfo"] = { link = "DiagnosticInfo" },
   ["DiagnosticUnderlineInfo"] = { underline = true },
   ["DiagnosticFloatingInfo"] = { link = "DiagnosticInfo" },
