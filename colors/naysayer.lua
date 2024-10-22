@@ -78,7 +78,7 @@ local groups = {
   ["vCursor"] = { link = "Cursor" },
   ["iCursor"] = { link = "Cursor" },
   ["lCursor"] = { link = "Cursor" },
-  ["Special"] = { link = "NaysayerLTeal" },
+  ["Special"] = { link = "NaysayerDGreen" },
   ["Comment"] = { link = "NaysayerLGreen" },
  --  ["Todo"] = { },
  --  ["Done"] = { },
