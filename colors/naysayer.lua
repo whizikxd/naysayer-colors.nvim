@@ -20,12 +20,6 @@ local p = {
   lcyan = "#8CF8F7",
 }
 
-vim.g.colors_name = "naysayer"
-vim.o.background = "dark"
-
-vim.cmd.hi("clear")
-vim.cmd.syntax("reset")
-
 local groups = {
   ["NaysayerGold"] = { fg = p.gold },
   ["NaysayerWhite"] = { fg = p.white },
@@ -199,6 +193,16 @@ local groups = {
   ["@type.definition"] = { link = "Type" },
 }
 
-for k, v in pairs(groups) do
-  vim.api.nvim_set_hl(0, k, v)
+function setup()
+  vim.g.colors_name = "naysayer"
+  vim.o.background = "dark"
+
+  vim.cmd.hi("clear")
+  vim.cmd.syntax("reset")
+
+  for k, v in pairs(groups) do
+    vim.api.nvim_set_hl(0, k, v)
+  end
 end
+
+setup()
