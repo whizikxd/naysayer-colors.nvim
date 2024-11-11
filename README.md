@@ -6,6 +6,10 @@ neovim theme inspired by J. Blow emacs theme
 
 ## Installation
 
+> [!TIP]
+> Use treesitter for the most consistent highlighting, highlighting without
+> it is a WIP and may be incorrect for some languages
+
 <details>
     <summary>using lazy.nvim</summary>
 
