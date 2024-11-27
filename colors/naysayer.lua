@@ -149,6 +149,10 @@ local groups = {
 
   ["pythonOperator"] = { link = "NaysayerWhite" },
 
+  ["javaScript"] = { link = "NaysayerGold" },
+  ["javaScriptFunction"] = { link = "NaysayerWhite" },
+  ["javaScriptIdentifier"] = { link = "NaysayerWhite" },
+
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
   ["@string.regexp"] = { link = "String" },
