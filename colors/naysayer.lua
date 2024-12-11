@@ -153,6 +153,8 @@ local groups = {
   ["javaScriptFunction"] = { link = "NaysayerWhite" },
   ["javaScriptIdentifier"] = { link = "NaysayerWhite" },
 
+  ["rubyStringDelimiter"] = { link = "NaysayerDGreen" },
+
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
   ["@string.regexp"] = { link = "String" },
