@@ -155,6 +155,8 @@ local groups = {
 
   ["rubyStringDelimiter"] = { link = "NaysayerDGreen" },
 
+  ["kConfigHelpText"] = { link = "NaysayerGold" },
+
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
   ["@string.regexp"] = { link = "String" },
