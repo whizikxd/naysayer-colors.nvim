@@ -10,8 +10,7 @@ neovim theme inspired by J. Blow emacs theme
 > Use treesitter for the most consistent highlighting, highlighting without
 > it is a WIP and may be incorrect for some languages
 
-<details>
-    <summary>using lazy.nvim</summary>
+using lazy.nvim
 
 ```lua
 {
@@ -23,10 +22,7 @@ neovim theme inspired by J. Blow emacs theme
 }
 ```
 
-</details>
-
-<details>
-    <summary>using packer.nvim</summary>
+using packer.nvim
 
 ```lua
 use {
@@ -36,5 +32,3 @@ use {
   end
 }
 ```
-
-</details>
