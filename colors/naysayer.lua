@@ -207,6 +207,7 @@ local groups = {
 function setup()
   vim.g.colors_name = "naysayer"
   vim.o.background = "dark"
+  vim.o.termguicolors = true
 
   vim.cmd.hi("clear")
   vim.cmd.syntax("reset")
