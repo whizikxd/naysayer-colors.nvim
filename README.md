@@ -17,7 +17,7 @@ using lazy.nvim
   "whizikxd/naysayer-colors.nvim",
   lazy = false,
   config = function()
-    vim.cmd("colorscheme naysayer")
+    vim.cmd.colorscheme("naysayer")
   end
 }
 ```
@@ -28,7 +28,7 @@ using packer.nvim
 use {
   "whizikxd/naysayer-colors.nvim",
   config = function()
-    vim.cmd("colorscheme naysayer")
+    vim.cmd.colorscheme("naysayer")
   end
 }
 ```
