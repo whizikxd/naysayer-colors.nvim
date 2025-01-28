@@ -157,6 +157,13 @@ local groups = {
 
   ["kConfigHelpText"] = { link = "NaysayerGold" },
 
+  ["shQuote"] = { link = "NaysayerDGreen" },
+  ["shStatement"] = { link = "NaysayerGold" },
+  ["shTestOpr"] = { link = "NaysayerGold" },
+  -- ["shDerefSimple"] = { link = "NaysayerGold" },
+
+  ["bashSpecialVariables"] = { link = "NaysayerGold" },
+
   ["@string"] = { link = "String" },
   ["@string.documentation"] = { link = "String" },
   ["@string.regexp"] = { link = "String" },
