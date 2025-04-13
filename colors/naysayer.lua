@@ -155,6 +155,9 @@ local groups = {
 
   ["rubyStringDelimiter"] = { link = "NaysayerDGreen" },
 
+  ["zigVarDecl"] = { link = "Keyword" },
+  ["zigDummyVariable"] = { link = "NaysayerGold" },
+
   ["kConfigHelpText"] = { link = "NaysayerGold" },
 
   ["shQuote"] = { link = "NaysayerDGreen" },
