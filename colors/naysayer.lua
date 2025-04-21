@@ -212,6 +212,8 @@ local groups = {
   ["@type"] = { link = "Type" },
   ["@type.builtin"] = { link = "Type" },
   ["@type.definition"] = { link = "Type" },
+
+  ["@lsp.type.namespace"] = { link = "NaysayerGold" },
 }
 
 function setup()
