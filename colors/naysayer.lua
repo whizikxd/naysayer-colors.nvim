@@ -164,6 +164,8 @@ local groups = {
   ["shStatement"] = { link = "NaysayerGold" },
   ["shTestOpr"] = { link = "NaysayerGold" },
   -- ["shDerefSimple"] = { link = "NaysayerGold" },
+  
+  ["vimVar"] = { link = "NaysayerGold" },
 
   ["bashSpecialVariables"] = { link = "NaysayerGold" },
 
