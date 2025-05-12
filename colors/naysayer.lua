@@ -114,6 +114,12 @@ local groups = {
 
   ["NeogitDiffAdd"] = { link = "DiffAdd" },
   ["NeogitDiffAddHighlight"] = { link = "DiffAdd" },
+  ['NeogitDiffDelete'] = { link = 'DiffDelete' },
+  ['NeogitDiffDeleteHighlight'] = { link = 'DiffDelete' },
+  ['NeogitDiffDeleteCursor'] = { link = 'ErrorMsg' },
+  ['NeogitDiffDeletions'] = { link = 'ErrorMsg' },
+  ['NeogitGraphRed'] = { link = 'ErrorMsg' },
+  ['NeogitGraphBoldRed'] = { link = 'NeogitGraphRed', bold = true, cterm = { bold = true } },
  --  ["SpellCap"] = { },
  --  ["SpellBad"] = { },
  --  ["SpellLocal"] = { },
