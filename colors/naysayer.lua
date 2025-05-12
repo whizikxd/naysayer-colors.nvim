@@ -111,6 +111,9 @@ local groups = {
   ["DiffAdd"] = { fg = p.teal, bg = p.dgreen },
   ["DiffChange"] = { fg = p.teal, bg = p.darkgrey1 },
   ["DiffText"] = { link = "DiffAdd" },
+
+  ["NeogitDiffAdd"] = { link = "DiffAdd" },
+  ["NeogitDiffAddHighlight"] = { link = "DiffAdd" },
  --  ["SpellCap"] = { },
  --  ["SpellBad"] = { },
  --  ["SpellLocal"] = { },
